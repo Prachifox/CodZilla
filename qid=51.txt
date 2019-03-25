@@ -1,0 +1,16 @@
+Code function calculateMedian to find and return Median of all elements of a sorted array.
+median is the value of the element residing in the middle when the elements are sorted.
+In case the array has even elements the median is the average of the two center elements.
+int  e;  /* Number of elements in  the sorted array */
+int *a;  /* Sorted Array of elements for ehich median has to be found */
+float median;  /* Variable to store the value of the calculated median */
+int y;
+y=e/2;
+if(e%2)
+{
+ median= a[y];
+}
+else
+{
+median= (a[y-1]+a[y])/2;
+}

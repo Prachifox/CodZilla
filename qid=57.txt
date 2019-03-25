@@ -1,0 +1,31 @@
+Write Code to find Median of all elements of an array.
+median is the value of the element residing in the middle when the array elements are sorted.
+In case the array has even elements the median is the average of the two center elements.
+int  e;  /* Number of elements in array */
+int *a;  /* Array of elements for which median  has to be found */
+float median;  /* Variable to store value of calculated median */
+int i,j,t,y,h,o;
+float b=2.0;
+y=e/2;
+h=e-1;
+i=0;
+while(i!=h)
+{
+ j=0;
+ o=e-1-i;
+ while(j!=o)
+{
+ if(a[j]>a[j+1])
+{
+ t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+j++;
+}
+i++;
+}
+if(e%2)
+median= a[y];
+else
+median= (a[y-1] + a[y])/b;

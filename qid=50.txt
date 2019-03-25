@@ -1,0 +1,23 @@
+Code function calculateMinimum to find and return minimum element of an array.
+The function accepts the number of elements and an array of integers as parameters.
+It returns the minimum element from the given array.
+  
+/*  
+ * The calculateMinimum Function accepts the number of elements (e) and an array of integers (a) as parameters
+ * It finds and returns the minimum element from the given array
+ */     
+int calculateMinimum(int e, int *a)
+{   
+int min;
+int *f = a + e;
+min=*a;
+*(a++);
+while( a < f )
+{
+if( *a < min )
+min=*a;
+*(a++);
+}
+return min;
+
+}

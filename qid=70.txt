@@ -1,0 +1,13 @@
+Complete function calculateDistance to calculate distance by the formula (u times t + half a times square of t).
+The function should accept values of initial velocity u, acceleration a, and time t as parameters
+The function should return the value of calculated distance s.
+/*
+ * The function calculateDistance calculates distance by the formula (u times t + half a times square of t)
+ * The function accepts values of initial velocity u, acceleration a, and time t as parameters
+ * The function returns the value of calculated distance
+ */
+float calculateDistance(float u, float a, float t)
+{
+return u*t+((a*t*t)/2);
+
+}

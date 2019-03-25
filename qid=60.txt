@@ -1,0 +1,33 @@
+Code function calculateStdDeviation to find and return square of standard deviation of all elements of an array.
+The function should accept the number of elements and an array of integers as parameters.
+It should calculate the average of all the elements of an array.
+It should calculate the sum of squares of the difference between each element and the average :sum of all (element-average)*(element-average).
+Standard Deviation is the sum of squares of the difference divided by number of elements.
+It should return the square of standard deviation of all the elements of the given array.
+      
+/*      
+ * The calculateStdDeviation Function accepts the number of elements (e) and an array of integers (a) as parameters
+ * It finds and returns the square of standard deviation of all the elements of the given array
+ */ 
+float calculateStdDeviation(int e, int *a)
+{
+float sum,sqSD;
+int *f = a + e;
+int *g = a;
+sum=0;
+sqSD=0;
+while( g < f )
+{
+ sum=sum + *g;
+ *(g++);
+}
+sum=sum/e;
+while( a < f )
+{
+sqSD= sqSD + (( *a - sum ) * ( *a - sum )); 
+*(a++);
+}
+sqSD=sqSD/e;
+return sqSD;
+
+}

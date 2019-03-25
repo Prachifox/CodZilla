@@ -1,0 +1,14 @@
+Complete function calculateVelocity to calculate velocity by the formula (u + a times t).
+The function should accept values of initial velocity u, acceleration a, and time t as parameters.
+The function should return the value of calculated velocity.
+/*
+ * The function calculateVelocity calculates velocity by the formula (u + a times t)
+ * The function accepts values of initial velocity u, acceleration a, and time t as parameters
+ * The function returns the value of calculated velocity
+ */
+float calculateVelocity(float u, float a, float t)
+{
+float v=u+a*t;
+return v;
+
+}

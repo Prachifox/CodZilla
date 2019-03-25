@@ -1,0 +1,10 @@
+Write code to calculate distance by the formula (u times t + half a times square of t).
+The code should accept values of initial velocity, acceleration, and time in variables u,a,t respetively
+The code should store the value of calculated distance in variable s.
+float u;  /* Has value of initial velocity */
+float a;  /* Has value of acceleration */
+float t;  /* Has value of time */
+float s;  /* Value of calculated distace to be stored here */
+s=u*t+((a*t*t)/2);
+
+return(s);}

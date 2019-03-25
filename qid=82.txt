@@ -1,0 +1,12 @@
+Write code to calculate simple interest.
+The principle is given in variable p.
+The time (in months) is given in variable m (can be non integer).
+The rate of interest (per cent per year) is given in variable r.
+The simple interest is to be calculated on whole months (ignore partial months).
+The calulated interest should be stored in variable si.
+float p;  /* Has the principle */
+float m;  /* Has the duration in months (can be non integer) */
+float r;  /* Has the rate of interest (per cent per annum) */
+float si;  /* To store the calculated simple interest */
+int t=m;
+si=(p*t*r)/1200;

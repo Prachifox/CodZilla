@@ -1,0 +1,8 @@
+Provide the missing declaration based on the assignment statement
+int main()
+{
+long int t;
+
+    t = -5l;
+    return(0);
+}

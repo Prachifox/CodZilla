@@ -1,0 +1,8 @@
+Provide the missing declaration based on the assignment statement
+int main()
+{
+float t;
+
+    t = 5.0;
+    return(0);
+}

@@ -1,0 +1,23 @@
+Write  a function to reverse elements of an array.
+The function should accept the number of elements and an array of integers as parameters.
+It should reverse the order of elements in the array.
+For n element array, array[n-1] should become array[0], array[n-1] should become array[1] and so on
+/*
+ * The reverseElements function accepts the number of elements (e) and an array of integers (a) as parameters
+ * The function reverses the order of elements in the array
+ * For n element array, array[n-1] should become array[0], array[n-1] should become array[1] and so on
+ */ 
+void reverseElements(int e, int *a)
+{
+int i,t;
+i=0;
+int j= e / 2 ;
+while(i!=j ) 
+{
+ t=a[i];
+ a[i]=a[e-1-i];
+ a[e-i-1]=t;
+ i++;
+ }
+
+}

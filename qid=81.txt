@@ -1,0 +1,9 @@
+Write code which
+    subtracts three times variable a from four times variable b.
+    divides the difference by variable c.
+    stores the remainder in variable result.
+int a;
+int b;
+int c;
+int result;  /* To store the calculated result */
+result=(4*b-3*a)%c;

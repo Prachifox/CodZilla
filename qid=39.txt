@@ -1,0 +1,22 @@
+Code function sortDescending to sort all elements of an array in descending order.
+The function should accept the number of elements and an array of integers as parameters.
+It should sort all the elements of the given array in descending order.
+/*
+ * The sortDescending Function accepts the number of elements (e) and an array of integers (a) as parameters
+ * It sorts all the elements of the given array in descending order
+ */
+void sortDescending(int e, int *a)
+{
+int i,j,t;
+for(i=0;i<(e-1);i++)
+for(j=0;j<(e-i-1);j++)
+{
+if(a[j]<=a[j+1])
+{
+t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+}
+
+}

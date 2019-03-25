@@ -1,0 +1,6 @@
+Write code to calculate sum of two times variable a and variable b.
+The calulated result should be stored in variable result.
+int a;
+int b;
+int result;  /* To store the calculated result */
+result=2*a+b;

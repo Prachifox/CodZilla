@@ -1,0 +1,12 @@
+Write Code to find and return maximum element of an array.
+int  e;  /* Number of Elements in Array */
+int *a;  /* Array of Elements for which maximum element is to be found */
+int  max;  /* Variable to find and store maximum element */
+max=0;
+int *f= a + e;
+while( a < f )
+{
+if( max < *a)
+max=*a;
+*(a++);
+}

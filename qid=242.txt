@@ -1,0 +1,26 @@
+Write code to find and store factors of a given integer in an array.
+A factor is a +ve integer greater than one which is divides the integer without a remainder.
+The number to be factorised is in integer i.
+The factors should be stored the in the array f in ascending order.
+The number of factors shold be stored in number n.
+Note : The number of factors is 1 for all primes greater than 1, it is 0 for all numbers < 2
+int f[100];  /* To store the factors */
+int i; /* The number to be factorised */
+int n; /* To store number of factors */
+int k;
+if(i<2)
+n=0;
+else
+{
+n=0;
+label:
+for(k=2;k<=i;k++)
+{
+if(i%k==0)
+{
+f[n++]=k;
+i=i/k;
+goto label;
+}
+}
+}

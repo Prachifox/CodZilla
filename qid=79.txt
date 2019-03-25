@@ -1,0 +1,7 @@
+Write code to add two times variable a to three times variable b and multiply the sum by variable c.
+The calulated result should be stored in variable result.
+int a;
+int b;
+int c;
+int result;  /* To store the calculated result */
+result=(2*a+3*b)*c;

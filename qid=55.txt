@@ -1,0 +1,15 @@
+Write Code to swap elements of an array.
+It should swap consecutive elements.
+array[0] and array[1] should be exchanged, array[2] and array[3] should be exchanged and so on.
+int  e;  /* Number of elements in array */
+int *a;  /* Array of elements to be swapped */
+int i, j, t;
+i=0;
+j= e-1 ;
+while( i < (e-1) )
+{
+  t=a[i];
+ a[i]=a[i+1];
+ a[i+1]=t;
+ i=i+2;
+}

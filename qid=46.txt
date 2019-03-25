@@ -1,0 +1,38 @@
+Write a function to arrange elements of an array in an up down manner.
+The function accepts number of elements and the array to be arranged as parameters.
+all elements which have odd index (1, 3, 5, 7... ) are greater than their neighbours.
+array[1] >= array[0] and array[1] >= array[2], array[3] >= array[2] and array[3] >= array[4], ....
+/*
+ * The upDownArray Function accepts the number of elements (e) and an array of integers (a) as parameters
+ * The function arranges elements of the array in an up down manner
+ * All elements which have odd index (1, 3, 5, 7... ) are greater than their neighbours.
+ * array[1] >= array[0] and array[1] >= array[2], array[3] >= array[2] and array[3] >= array[4], ....
+ */
+void upDownArray(int e, int *a)
+{
+int i=0,j,t,h=e-1,l=1,o;
+while( i < e )
+{
+j=0;
+o=h-i;
+while( j < o )
+{
+if( a[j] > a[j+1] )
+{
+t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+j++;
+}
+i++;
+}
+while(l < (e-1))
+{
+t=a[l+1];
+a[l+1]=a[l];
+a[l]=t;
+l=l+2;
+}
+
+}

@@ -1,0 +1,10 @@
+Write Code to find average of all elements of an array.
+int  e;  /* Number of elements in array */
+int *a;  /* Array of elements */
+float average;  /* average to be calculated */
+float total=0;
+int *end= a + e;
+while(a < end){
+total=total + *(a++);
+}
+average=total/e;

@@ -1,0 +1,8 @@
+Write code to calculate square of velocity by the formula (square of u +  2 times a times s).
+The code should accept values of initial velocity, acceleration, and distance in variables u,a,s respectively.
+The code should store the value of calculated square of final velocity in variable sqV.
+float u;  /* Has value of initial velocity */
+float a;  /* Has value of acceleration */
+float s;  /* Has value of distace */
+float sqV;  /* Stores value of calculated square of final velocity */
+sqV=(u*u)+(2*a*s);
