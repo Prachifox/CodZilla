@@ -1,0 +1,29 @@
+Write function reverseDigits to reverse a given integer number n and return the reversed integer.
+The function should accept an integer n and should return an integer with reversed digits.
+The function should work for -ve values also.
+If n has the value 123, then the function should return 321
+If n has the value -123, then the function should return -321
+/*
+ * The function reverseDigits accepts an input integer n
+ * It reverses the digits  and returns the resultant integer
+ * It works for -ve integers also
+ * If n has the value 123, then the function returns 321
+ * If n has the value -123, then the function returns -321
+ */
+int reverseDigits(int n)
+{
+int r;
+int a=abs(n);
+r=0;
+int rem;
+while(a>0)
+{
+rem=a%10;
+a=a/10;
+r=r*10+rem;
+}
+if(n<0)
+r=-r;
+return r;
+
+}

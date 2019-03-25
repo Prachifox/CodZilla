@@ -1,0 +1,25 @@
+Fixed deposit interest rate for a senior citizen (attaining age 60) is 0.5% more than others.
+The fixed deposit interest rate for others is 6.0% per annum for less than 30 days.
+Between 30 and 60 days, the fixed deposit interest rate for others is 6.50% per annum.
+Beyond 60 days, the fixed deposit interest rate for others increases by 0.25% per annum for every 30 days or part thereof.
+The maximum fixed deposit interest rate for others is capped at 8.00%.
+Write code which computes and stores the fixed deposite interest rate in variable iRate when variables a and d store age and distance (in days).
+int a;  /* Age of depositor */
+int d;  /* duration of deposit in days */
+float iRate;  /* Computed interest rate */
+iRate=6.0;
+if(d>=30 && d<=60)
+iRate=6.5;
+else if(d>60)
+{
+iRate=6.5;
+d=d-60;
+while(d>0 && iRate<8.0)
+{
+d=d-30;
+iRate+=.25;
+}
+}
+if(a>=60)
+iRate+=0.5;
+
