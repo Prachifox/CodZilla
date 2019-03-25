@@ -1,0 +1,16 @@
+In the given code segment complete the if/else conditions and an assignment statement
+  so that the code finds the minimum of numbers a,  b and c using only two if statements
+The code should store the minimum number in variable min
+int a;
+int b;
+int c;
+int min;  /* To store the minimum value */
+    min = a;
+    if (b < min)
+    {
+        min = b;
+    }
+    if (c < min)
+    {
+        min = c;
+    }

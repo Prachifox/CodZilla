@@ -1,0 +1,24 @@
+In the given code segment complete the if/else conditions
+  so that the code finds the least of numbers a,  b and c
+  If there is no least (bottom 2 or three numbers are equal) the result is -1
+The code should store the least number (or -1) in variable least
+int a;
+int b;
+int c;
+int least;  /* To store the least value */
+    if (b>a && c>a)
+    {   /* a is least*/
+        least = a;
+    }
+    else if (a>b && c>b)
+    {   /* b is least*/
+        least = b;
+    }
+    else if (a>c && b>c)
+    {   /* c is least*/
+        least = c;
+    }
+    else
+    {   /* No clear least number */
+        least = -1;
+    }

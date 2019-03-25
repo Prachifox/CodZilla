@@ -1,0 +1,33 @@
+One can classify people on their weight from the following table (based on percent of their height)
+               Code  Rule (% of height in cms)
+    Very Fat   "VF"  >200% of height in cms
+    Fat         "F"  >170% of height in cms
+    Stout       "S"  >130% of height in cms
+    Regular     "R"  >100% of height in cms
+    Thin        "T"  > 70% of height in cms
+    Skinny     "VT"  < 70% of height in cms
+Write a function which determines the weight code and stores it in variable wCode given parameters
+    integer height (in cms) 
+    float weight (in kgs)
+/*
+ * The function getWeight accepts integer h (height in cms) and float w (weight in kgs)
+ * It should compute and return the weight code based on height and weight
+ */
+char *getWeight(int h, float w)
+{
+
+if(w>2*h)
+return "VF";
+else if(w>1.7*h)
+return "F";
+else if(w>1.3*h)
+return "S";
+else if(w>1*h)
+return "R";
+else if(w>.7*h)
+return "T";
+else 
+return "VT";
+
+
+}

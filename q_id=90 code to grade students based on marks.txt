@@ -1,0 +1,22 @@
+The pass grade of students is determined with the following rules.
+    Marks above 85% grade is "DIS"
+    Marks above 60% grade is "I"
+    Marks above 50% grade is "II"
+    Marks including 5 grace marks above 35% grade is "III"
+    Everyone else grade is "F"
+The students can appear for either 7 or 8 subjects each carrying 100 marks.
+Write code which determines the grade and stores it in variable grade
+    when number of subjects and total marks are in variable s and m respectively.
+int s;  /* Number of subjects attempted by student */
+int m;  /* Total marks in all subjects */
+char *grade;  /* Variable where grade is to be stored */
+    grade = "F";
+float x=m/(s*100.0);
+if(x>35)
+grade="III";
+if(x>50)
+grade="II";
+if(x>60)
+grade="III";
+if(x>85)
+grade="DIS";

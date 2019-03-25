@@ -1,0 +1,42 @@
+One can classify people on their height from the following table (different for men and women).
+               Code  Men    Women
+    Very Tall  "VT"  183     175
+    Tall        "T"  175     168
+    Medium      "M"  168     160
+    Short       "S"  152     145
+    Very Short "VS" <152    <145
+Write a function which accepts gender (1 if male, 0 if female) and h (height in cms)
+    height (in cms) is in variable h
+    and determines the height code and returns it
+/*
+ * The function getHeight accepts two integers male (gender : 1 if male, 0 if female) and h (height in cms)
+ * It should compute and return the height code based on gender and height
+ */
+char *getHeight(int male, int h)
+{
+if(male)
+{
+if(h>=183)
+return "VT";
+if(h>=175)
+return "T";
+if(h>=168)
+return "M";
+if(h>=152)
+return "S";
+else
+return "VS";
+}
+else
+{
+if(h>=175)
+return "VT";
+if(h>=168)
+return "T";
+if(h>=160)
+return "M";
+if(h>=145)
+return "S";
+else
+return "VS";
+}

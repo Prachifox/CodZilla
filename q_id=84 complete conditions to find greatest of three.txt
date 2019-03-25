@@ -1,0 +1,24 @@
+In the given code segment complete the if/else conditions
+  so that the code finds the greatest of numbers a,  b and c
+  If there is no greatest (top 2 or three numbers are equal) the result is -1
+The code should store the greatest number (or -1) in variable greatest
+int a;
+int b;
+int c;
+int greatest;  /* To store the greatest value */
+    if (a>b && a>c)
+    {   /* a is greatest*/
+        greatest = a;
+    }
+    else if (b>a && b>c)
+    {   /* b is greatest*/
+        greatest = b;
+    }
+    else if (c>a && c>b)
+    {   /* c is greatest*/
+        greatest = c;
+    }
+    else
+    {   /* No clear greatest number */
+        greatest = -1;
+    }

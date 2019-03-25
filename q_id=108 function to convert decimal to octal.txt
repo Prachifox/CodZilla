@@ -1,0 +1,30 @@
+Complete function to convert a given decimal positive integer (< 256) to octal notation.
+The decimal number is given as parameter n.
+The octal representation is to be returned in a character array oct.
+/*
+ * The following function should accept a decimal positive integer parameter (< 256)
+ * The function should convert the integer to a octal format (3 digits)
+ * and returns the result in a character array oct as string
+ * The MSB should occupy least index - padding with 0
+ * Eg: 10 should give '012' terminated by \0
+ *      5 should give '005' terminated by \0
+ */
+char oct[4];
+char *convertToOctal(int n)
+{
+    oct[3] = '\0';
+    
+for(int i=0;i<3;++i)
+oct[i]='0';
+int j=2;
+while(n>0)
+{
+int a=n%8;
+char ch=a+48;
+n=n/8;
+oct[j]=ch;
+--j;
+}
+
+    return(oct);
+}

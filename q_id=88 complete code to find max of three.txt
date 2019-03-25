@@ -1,0 +1,16 @@
+In the given code segment complete the if/else conditions and assignment statements
+  so that the code finds the maximum of numbers a,  b and c using only two if statements
+The code should store the maximum number in variable max
+int a;
+int b;
+int c;
+int max;  /* To store the maximum value */
+    max = a;
+    if (b>max)
+    {
+        max = b;
+    }
+    if (c>max)
+    {
+        max = c;
+    }

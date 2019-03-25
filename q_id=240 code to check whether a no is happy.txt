@@ -1,0 +1,31 @@
+Write code to determine if a number qualifies to be called a happy number.
+A happy number test : sum of squares of all digits (eventually turns out to be) 1.
+If the sum of squares is not 1, the number is replaced by the sum of squares and the 'happy test' applied.
+After nine such replacements (10 'happy tests') the sum of squares is not 1, the number is declared as 'unhappy'.
+Write code to determine if a number is 'Happy'
+The variable isHappy should be set to 1 if number is Happy, 0 otherwise.
+Examples :
+Number 13 is happy in 2 iterations; 13->(1*1) + (3*3)= 10, 10->(1*1)+(0*0)=1
+Number 5 is unhappy; 5->25, 25->(2*2)+(5*5)->29, 29->(4)+(81)->85, 85->64+25->89, 89->(64)+(81)->145, 145->(1)+(16)+(25)->42..... 
+int num;
+int isHappy;
+isHappy=0;
+int a=9;
+int sum;
+while(a--)
+{
+sum=0;
+while(num>0)
+{
+int a=num%10;
+num=num/10;
+sum+=(a*a);
+}
+if(sum==1)
+{
+isHappy=1;
+break;
+}
+else
+num=sum;
+}

@@ -1,0 +1,18 @@
+Write code to check whether an integer variable i is a prime.
+A prime is defined as a +ve integer greater than one which is divisible only by 1 and itself.
+If i is less than 2, the variable isprime should be set to 0
+else if i is a prime, it should be set to 1 else it should be set to 0.
+int i;  /* The integer which has to be tested if prime */
+int isprime;  /* The varaible where the result of the test is stored */
+isprime=1;
+if(i<2)
+isprime=0;
+int j;
+for(j=2;j<=i/2;++j)
+{
+if(i%j==0)
+{
+isprime=0;
+break;
+}
+}

@@ -1,0 +1,18 @@
+Write code to reverse a given integer number n and store the reversed integer in r.
+The code should work for -ve values also.
+You can define your own variables.
+If n has the value 123, then r should have the value 321.
+If n has the value -123, then r should have the value -321.
+int n;  /* The integer to be reversed : It may be -ve */
+int r;  /* The integer where the reversed value is to be computed */
+int a=abs(n);
+r=0;
+int rem;
+while(a>0)
+{
+rem=a%10;
+a=a/10;
+r=r*10+rem;
+}
+if(n<0)
+r=-r;

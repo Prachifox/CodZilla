@@ -1,0 +1,19 @@
+Cost of a rail ticket for child less than 12 years is 50% of adult ticket.
+For senior citizens (attaining age 60) the rail ticket cost is 80% of adult ticket.
+For adults the tickets cost is based on distance tarvelled.
+For every 50 kilometers or part thereof, the ticket cost is Rs. 20
+Write code which computes the ticket cost given age (in variable) a and distance (in variable) d and stires it in variable cost.
+int a;  /* Age of traveller */
+int d;  /* distance iin km of journey */
+int cost;  /* Cost of ticket to be computed */
+cost=0;
+while(d>0)
+{
+d=d-50;
+cost+=20;
+}
+if(a>=60)
+cost=.8*cost;
+if(a<12)
+cost=.5*cost;
+

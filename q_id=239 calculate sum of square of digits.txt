@@ -1,0 +1,14 @@
+Write code to compute the sum of squares of all the digits of a given number.
+The number is supplied in the variable num.
+The computed sum of squares should be stored in variable sum.
+If the number is -ve, the -ve sign is to be ignored.
+int num;
+int sum;
+num=abs(num);
+sum=0;
+while(num>0)
+{
+int a=num%10;
+num=num/10;
+sum+=(a*a);
+}
