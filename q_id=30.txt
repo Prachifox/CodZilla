@@ -1,0 +1,9 @@
+Write code to check whether a variable i is even.
+The code should change the value of variable iseven to 1 if i is even, otherwise 0.
+int i;      /* Variable whose value is to be checked */
+int iseven;  /* Variable to store 1 if i is even and 0 otherwise */
+if(i%2)
+iseven=0;
+else
+iseven=1;
+

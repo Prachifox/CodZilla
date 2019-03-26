@@ -1,0 +1,8 @@
+Provide the missing declaration based on the assignment statement
+int main()
+{
+char *t;
+
+    t = "0";
+    return(0);
+}

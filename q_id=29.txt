@@ -1,0 +1,18 @@
+Complete the function to check whether the first parameter to the function is divisible by the second parameter.
+The function should accept integer parameter i (to be tested) and another integer paarmeter f (possible factor).
+If i is divisble by f, the function should return 1 else return 0.
+/*
+ * The isDivisible function returns 1 if input parameter i is divisible by f, Otherwise it returns 0
+ * The function accepts integer parameter i (to be tested) and another integer paarmeter f (possible factor).
+ * If i is divisble by f, the function returns 1 else returns 0.
+ */
+int isDivisible(int i, int f)
+{
+int isDiv;
+if(i%f==0)
+isDiv=1;
+else
+isDiv=0;
+return isDiv;
+
+}

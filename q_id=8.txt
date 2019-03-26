@@ -1,0 +1,14 @@
+Give the equivalent of a decimal number in other bases
+Please only write the digits 0-F for hex, 0-7 for octal, 0-1 for binary 0-3 for base 4
+The number 777 in hexadecimal is 
+309
+
+The number 777 in octal is 
+1411 
+
+The number 777 in binary is
+1100001001 
+
+The number 777 to the base 4 is 
+30021 
+ 

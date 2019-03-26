@@ -1,0 +1,12 @@
+Complete the function to return the absolute value of a number.
+The function should accept an integer parameter i.
+The function should return the absolute value of i.
+/*
+ * The absolute function returns the absolute value of input parameter i
+ * The function should accept an integer parameter i
+ */
+int absolute(int i)
+{
+return abs(i);
+
+}

@@ -1,0 +1,32 @@
+Give the one's complement representation for the following 10 decimal numbers.
+The integer representation is restricted to 8 bits (1 bit for sign 7  bits value) for simplicity.
+Give one's complement representation for (maximum eight bits)
+1's complement of  1 
+00000001 
+
+1's complement of  -1 
+11111110 
+
+1's complement of  127 
+01111111 
+
+1's complement of  -127 
+10000000 
+
+1's complement of  31 
+00011111 
+
+1's complement of  -31 
+11100000 
+
+1's complement of  64 
+01000000 
+
+1's complement of  -64 
+10111111 
+
+1's complement of  79 
+01001111 
+
+1's complement of  -79 
+10110000 

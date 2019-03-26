@@ -1,0 +1,8 @@
+Write code to check whether a variable i is odd.
+The code should change the value of variable isodd to 1 if i is odd, otherwise 0.
+int i;      /* Variable whose value is to be checked */
+int isodd;  /* Variable to store 1 if i is odd and 0 otherwise */
+isodd=i%2;
+
+
+Contact Us

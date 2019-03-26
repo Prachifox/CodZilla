@@ -1,0 +1,32 @@
+Give the sign magnitude representation for the following 10 decimal numbers.
+The integer representation is restricted to 8 bits (1 bit for sign 7  bits value) for simplicity.
+Give sign magnitude representation for (maximum eight bits)
+sign magnitude representation of  1 
+00000001 
+
+sign magnitude representation of  -1 
+10000001 
+
+sign magnitude representation of  127 
+01111111 
+
+sign magnitude representation of  -127 
+11111111 
+
+sign magnitude representation of  31 
+00011111 
+
+sign magnitude representation of  -31 
+10011111 
+
+sign magnitude representation of  64 
+01000000 
+
+sign magnitude representation of  -64 
+11000000 
+
+sign magnitude representation of  79 
+01001111 
+
+sign magnitude representation of  -79 
+11001111 

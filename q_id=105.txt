@@ -1,0 +1,33 @@
+Convert 10 one's complement binary representation to decimal numbers 
+The one's complement binary representation is restricted to 8 bits (1 bit for sign 7  bits value) for simplicity.
+Give decimal equivalent of the following one's complement representations (maximum eight bits)
+decimal equivalent of 01111111
+127 
+
+decimal equivalent of 10000000
+-127 
+
+decimal equivalent of 00000000
+0 
+
+decimal equivalent of 11111111
+0 
+
+decimal equivalent of 01010101
+85 
+
+decimal equivalent of 10101010
+ -85
+
+decimal equivalent of 01100110
+102 
+
+decimal equivalent of 10011001
+-102 
+
+decimal equivalent of 00110011
+51 
+
+decimal equivalent of 11001100
+-51 
+

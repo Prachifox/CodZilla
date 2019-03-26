@@ -1,0 +1,21 @@
+Complete the reverseInteger function to reverse 32 bit of the integer operand and return the integer with reversed bits.
+The function should accept a 32 bit integer parameter i.
+The function should return the integer with reversed bits.
+Integer with bit sequence 101100......110010 will become 010011......001101
+/*
+ * The reverseInteger function returns a 32 bit integer with reversed bits
+ * The function should accept an integer parameter i
+ * Integer with bit sequence 101100......110010 will become 010011......001101
+ */
+int reverseInteger(int i)
+{
+int rev=0,temp;
+for(int j=0;j<32;++j)
+{
+temp=i & (1 << j);
+if(temp)
+rev=rev | (1 << (31-j));
+}
+return rev;
+
+}

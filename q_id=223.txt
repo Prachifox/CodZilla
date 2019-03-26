@@ -1,0 +1,8 @@
+Provide the missing declaration based on the assignment statement
+int main()
+{
+unsigned int t;
+
+    t = 5u;
+    return(0);
+}

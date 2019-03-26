@@ -1,0 +1,8 @@
+What is the output of the following program snippet :  
+   int a = 0, b = 1, c = 0, val1, val2, val3;
+   val1 = !(a || b || c);
+   val2 = a || b && c ;
+   val3 = !(a && b || c) ;
+   printf("%d%d%d",val1,val2,val3);
+    
+001

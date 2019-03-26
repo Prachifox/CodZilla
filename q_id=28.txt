@@ -1,0 +1,10 @@
+Write Code to check whether the one integer i is divisible by another integer f.
+If i is divisble by f, the function should return 1 else return 0.
+int i;  /* The integer to be tested for divisibility */
+int f;  /* The possible factor of i to be tested */
+int isDiv;  /* To store the result of divisibility test (If i is divisble by f, 1 else 0) */
+if(i%f==0)
+isDiv=1;
+else
+isDiv=0;
+

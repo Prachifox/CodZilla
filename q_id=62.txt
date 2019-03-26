@@ -1,0 +1,24 @@
+The following C program calculates the total bill based on the number of items and price per item.
+The novice programmer has failed to include some statements, hence the program gives compile errors.
+Please supply the missing statements to make the program compile and execute.
+#include<stdio.h>
+int main()
+{
+int total,items,price;
+
+    total = 0;
+    items = 0;
+    price = 0;
+    printf("provide number of items (0 to exit)");
+    scanf("%d", &items);
+    while (items <= 0)
+    {
+        printf("provide price per item");
+        scanf("%d", &price);
+        total += items * price;
+        printf("provide number of items (0 to exit)");
+        scanf("%d", &items);
+    }
+    printf("Total bill = %d\n", total);
+    return(0);
+}

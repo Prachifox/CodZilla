@@ -1,0 +1,25 @@
+The following C program calculates the average of two digit numbers which are accepted from the user.
+The novice programmer has failed to include some statements, hence the program gives compile errors.
+Please supply the missing statements to make the program compile and execute.
+#include <stdio.h>
+int main()
+{
+float avg;
+int count,a;
+
+
+    avg   = 0.0;
+    count = 0;
+    (void) printf("provide number (> 99 to exit)");
+    (void) scanf("%d", &a);
+    while ((a < 100) && (a > -100))
+    {
+        avg += a;
+        count++;
+        (void) printf("provide number (> 99 to exit)");
+        (void) scanf("%d", &a);
+    }
+    avg /= count;
+    (void) printf("%s %f\n", "average = ", avg);
+    return(0);
+}

@@ -1,0 +1,22 @@
+Complete the reverseCharacter function to reverse 8 bits of the character operand and return the character with reversed bits.
+The function should accept a 8 bit character parameter c.
+The function should return a character with reversed bits.
+Character with bit sequence 1001110 will become 0111001
+/*
+ * The reverseCharacter function returns a 8 bit character with reversed bits
+ * The function accepts a 8 bit character parameter c
+ * Character with bit sequence 1001110 will become 0111001
+ */
+char reverseCharacter(char c)
+{
+int rev=0,i,temp;
+for(i=0;i<8;i++)
+{
+temp=(c & (1 << i));
+if(temp)
+rev|=(1 << (7-i));
+}
+return rev;
+
+}
+
